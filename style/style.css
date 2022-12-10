@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 29%, rgb(0, 212, 255) 100%);
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+  display: flex;
+}
+
+.container {
+  max-width: 1200px;
+  background-color: rgba(140, 243, 161, 0.9);
+  margin: 0 auto;
+  height: 80vh;
+  position: relative;
+}
+
+.sort-name {
+  color: #fff;
+}
+
+.logo {
+  display: inline-block;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  color: #fff;
+}
+
+.add-task {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#add-newtask {
+  padding: 20px 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.todoitem {
+  font-size: 2em;
+}
+
+.todolist {
+  padding: 20px;
+}
+
+#submit {
+  padding: 20px 40px;
+}
+
+.todolist-wrapper {
+  padding: 20px;
+  max-height: 60vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
