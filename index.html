@@ -8,121 +8,52 @@
     , initial-scale=1.0">
     <title>To do</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <input id="search" type="text">
+        <div class="header-container">
+            <div class="options">
+                <input id="search" type="text" placeholder="Search">
 
-        <label for="cars">sort:</label>
-        <div class="sort">
-            <div class="sort-name">
-                Sort by
+
+                <div class="sort">
+                    <div class="sort-name">
+                        Sort
+                    </div>
+                    <select id="sortbar" name="sort">
+
+                        <option value="newest">by newest</option>
+                        <option value="oldest">by oldest</option>
+
+                    </select>
+
+
+                </div>
             </div>
-            <select id="cars" name="cars">
 
-                <option value="volvo">by newest</option>
-                <option value="saab">by oldest</option>
-
-            </select>
-            <span class="logo">To do list</span>
+            <div class="logo">To Do List</div>
+            <div class="empty-div"></div>
 
         </div>
-
-
     </header>
     <main>
         <div class="container">
             <div class="todolist-wrapper">
                 <ul class="todolist">
                     <li class="todoitem">
-                        <input type="checkbox"> hello
+                        <input type="checkbox" id="todo" name="todo" value="todo">
+                        <label id="todo-text" for="todo" data-content="Get out of bed">alo</label>
                     </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
-                    <li class="todoitem">
-                        <input type="checkbox"> hello
-                    </li>
+
+
                 </ul>
             </div>
             <div class="add-task">
-                <input type="text" id="add-newtask">
+                <input type="text" id="add-newtask" placeholder="Write new task...">
                 <input type="submit" name="Submit" id="submit">
             </div>
         </div>
